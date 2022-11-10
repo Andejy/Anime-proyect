@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-const List = styled.li`
-  margin: 10px;
-  display: inline-block;
-  font-size: 1.4rem;
-`;
+const List = styled.a``;
 
 export default List;

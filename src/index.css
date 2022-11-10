@@ -1,10 +1,17 @@
+:root {
+  --purple: #9c3acc;
+  --purpleDarck: #9f64ff;
+}
+
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--purple);
   text-decoration: inherit;
+  transition: all 0.5s;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--purpleDarck);
 }
 
 body {
@@ -14,12 +21,14 @@ body {
 }
 .head-desktop {
   display: flex;
+  color: var(--purple);
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   background-color: #fff;
   height: 60px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid var(--purple);
 }
 
 .menu-container-desktop > li > a {
@@ -45,20 +54,29 @@ body {
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;
+  border: solid var(--purple);
   border-radius: 1rem;
 }
+
+.search-input::placeholder {
+  color: var(--purple);
+}
+
 .btn-input {
   margin: 10px;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
+  color: var(--purple);
   cursor: pointer;
   transition: all 0.5s;
 }
 .btn-input:hover {
-  background-color: #ccc;
+  background-color: var(--purple);
+  color: #fff;
 }
 .anime-list {
+  padding: 0.5rem;
   margin-top: 2rem;
   background-color: #f5f5f5;
   display: grid;
@@ -71,6 +89,7 @@ body {
   width: 15rem;
   border-radius: 1rem;
   display: flex;
+  color: var(--purple);
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -83,21 +102,23 @@ body {
 }
 
 .container-link:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(193, 7, 235, 0.5);
   transform: translateY(-10px);
 }
 
 .container-link > h3 {
+  margin-top: 0.7rem;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0.3rem;
   padding: 0;
-  color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* // movil zone  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
   .search-container {
     display: flex;
     flex-direction: column;

@@ -1,7 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import { Context } from "../context/Context";
-
 function Search() {
   const { setSearch, Search, searchtAnime } = useContext(Context);
   return (
